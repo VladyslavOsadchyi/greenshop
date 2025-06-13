@@ -5,26 +5,30 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>registratuon_form</title>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
   <form action="#" method="post">
-    <h2>Login | <span style="color: #46a368">Register</span></h2>
+    <div class="box">
+      <h2 class="login-text">Login <span class="separator">|</span> <span class="register-text">Register</span></h2>
+    </div>
     <p>Enter your email and password to register.</p>
-    <input type="text" name="Username" placeholder="Username" /> <br />
-    <input type="email" name="Enter your email address" placeholder="Enter your email address" /> <br />
-    <input type="password" name="Password" placeholder="Password" />
+    <input class="input-text" type="text" name="Username" placeholder="Username" /> <br />
+    <input class="input-email" type="email" name="Enter your email address" placeholder="Enter your email address" /> <br />
+    <input class="input-password" type="password" name="Password" placeholder="Password" />
     <img src="/images/Hide.jpg" width="20" alt="Hide ikon" /> <br />
-    <input type="password" name="Confirm Password" placeholder="Confirm Password" /> <br />
-    <button type="submit" style="background-color: #46a368">Register</button> <br />
+    <input class="input-Confirm-Password" type="password" name="Confirm Password" placeholder="Confirm Password" /> <br />
+    <button class="btn" type="submit">Register</button> <br />
     <p>Or register with</p>
     <br />
-    <button type="submit">
+    <button class="btn-social-media" type="submit">
       <img src="/images/google1.jpg" width="20" alt="googl ikon" />
-      Continue with Google
+      <span>Continue with Google</span>
     </button>
     <br />
-    <button type="submit">
+    <button class="btn-social-media" type="submit">
       <img src="/images/facebook1.jpg" width="20" alt="facebook ikon" />
       <span>Continue with Facebook</span>
     </button>
