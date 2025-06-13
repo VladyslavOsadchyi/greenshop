@@ -1,0 +1,61 @@
+.box {
+  width: 157px;
+  height: 22px;
+}
+.login-text {
+  font-weight: 500;
+  font-size: 20px;
+  color: #3d3d3d;
+}
+.separator {
+  font-weight: 250;
+  font-size: 18px;
+  color: #3d3d3d;
+}
+.register-text {
+  font-weight: 500;
+  font-size: 20px;
+  color: #46a358;
+}
+p {
+  font-weight: 400;
+  font-size: 13px;
+  color: #3d3d3d;
+}
+.input-text {
+  border: 1px solid;
+  font-weight: 400;
+  font-size: 14px;
+  color: #a5a5a5;
+}
+.input-email {
+  border: 1px solid;
+  font-weight: 400;
+  font-size: 14px;
+  color: #a5a5a5;
+}
+.input-password {
+  border: 1px solid;
+  font-weight: 400;
+  font-size: 14px;
+  color: #a5a5a5;
+}
+.input-Confirm-Password {
+  border: 1px solid;
+  font-weight: 400;
+  font-size: 14px;
+  color: #a5a5a5;
+}
+.btn {
+  background-color: #46a358;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #ffffff;
+}
+.btn-social-media {
+  font-weight: 500;
+  mask-size: 13px;
+  text-align: center;
+  color: #727272;
+}
