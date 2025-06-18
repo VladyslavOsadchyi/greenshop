@@ -2,7 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html,
 body,
 div,
@@ -107,6 +106,11 @@ section {
 }
 body {
   line-height: 1;
+}
+<<<<<<< hw6_inline_block
+img {
+  max-width: 100%;
+  height: auto;
 }
 ol,
 ul {
