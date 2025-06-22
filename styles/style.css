@@ -263,6 +263,9 @@ p {
   float: right;
   width: calc(100% - 310px);
 }
+.product_options {
+  margin-bottom: 31px;
+}
 .product_options_list {
   list-style-type: none;
   padding: 0;
@@ -288,6 +291,7 @@ p {
 .Short_by {
   float: right;
   font-size: 16px;
+  font-weight: normal;
 }
 .filter_select {
   border: none;
