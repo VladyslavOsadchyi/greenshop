@@ -145,11 +145,11 @@ p {
   color: black;
   margin: 0 50px;
 }
-.menu-list.active {
+.menu-list.active a {
   position: relative;
   font-weight: bold;
 }
-.menu-list.active::after {
+.menu-list.active a::after {
   content: "";
   display: inline-block;
   height: 3px;
@@ -223,7 +223,7 @@ p {
 
 /* styles for main - section plants_box */
 .plants_box {
-  margin-top: 26px;
+  padding-top: 26px;
 }
 .plants_box::after {
   content: "";
@@ -233,6 +233,7 @@ p {
 .category_box {
   width: 310px;
   float: left;
+  padding: 14px 18px;
   background-color: #fbfbfb;
 }
 .category_box h3 {
@@ -263,9 +264,17 @@ p {
   width: calc(100% - 310px);
 }
 .product_options_list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
   font-weight: normal;
   font-size: 15px;
   color: #3d3d3d;
+  float: left;
+}
+.product_options_list li {
+  display: inline-block;
+  margin-right: 37px;
 }
 .product_options_list a {
   color: inherit;
@@ -276,58 +285,54 @@ p {
   color: #46a358;
   font-weight: bold;
 }
-.product_options_list li {
-  float: left;
-  text-align: center;
-  vertical-align: middle;
-  padding: 20px;
-}
 .Short_by {
   float: right;
-  text-align: center;
-  vertical-align: middle;
-  font-weight: 16px;
+  font-size: 16px;
 }
 .filter_select {
   border: none;
 }
-
 .cards_list li {
-  width: 258px;
-  height: 350px;
-  background-color: #fbfbfb;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0;
+  width: 33.3%;
+}
+.cards_ikon {
+  background-color: #ccc;
 }
 .cards_list p {
   font-weight: normal;
   font-size: 16px;
+  margin: 0;
 }
 .cards_list span {
   font-weight: bold;
   font-size: 18px;
   color: #46a358;
+  margin: 0;
 }
-.cards_pagination {
-  text-align: right;
-}
-.cards_pagination li {
+.pagination li {
   display: inline-block;
-  font-weight: normal;
-  font-size: 18px;
+  margin-left: 5px;
   text-align: center;
 }
-.pagination_list.active,
-.pagination_list a:hover {
+.pagination li.active a,
+.pagination a:hover {
   background-color: #46a358;
   color: #fff;
-  font-weight: bold;
 }
-.pagination_list a {
+.pagination {
+  text-align: right;
+}
+.pagination a {
   display: inline-block;
   width: 35px;
   height: 35px;
-  color: #3d3d3d;
-  border: 1px solid #ccc;
   border-radius: 4px;
+  border: 1px solid #e5e5e5;
+  padding-top: 8px;
   text-decoration: none;
-  padding: 10px 10px;
-  }
+  color: inherit;
+  overflow: hidden;
+}
