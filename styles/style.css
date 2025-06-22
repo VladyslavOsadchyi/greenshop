@@ -1,4 +1,35 @@
 /* styles for form */
+@font-face {
+  font-family: "Cera Pro";
+  src: local("Cera Pro"), url("../fonts/CeraPro-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cera Pro";
+  src: local("Cera Pro"), url("../fonts/CeraPro-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cera Pro";
+  src: local("Cera Pro"), url("../fonts/CeraPro-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cera Pro";
+  src: local("Cera Pro"), url("../fonts/CeraPro-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: "Cera Pro";
+}
 .box {
   width: 157px;
   height: 22px;
@@ -69,6 +100,11 @@ p {
   padding: 20px 0;
   margin-bottom: 20px;
 }
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 .header-logo,
 .header-menu,
 .header-login {
@@ -109,19 +145,34 @@ p {
   color: black;
   margin: 0 50px;
 }
+.menu-list.active a {
+  position: relative;
+  font-weight: bold;
+}
+.menu-list.active a::after {
+  content: "";
+  display: inline-block;
+  height: 3px;
+  background: green;
+  position: absolute;
+  bottom: -32px;
+  left: 0;
+  right: 0;
+}
 /* end styles for heared */
 
-/* styles for main */
+/* styles for main - section visual */
 .visual {
   font-size: 0;
   background-color: #f5f5f5;
-  padding-left: 40px;
 }
+
 .visual-text {
   width: 50%;
   display: inline-block;
   font-size: 14px;
   vertical-align: middle;
+  padding-left: 40px;
 }
 .visual-text h2 {
   width: 205px;
@@ -168,7 +219,124 @@ p {
   display: inline-block;
   vertical-align: middle;
 }
-.visual-img-small {
-  margin-right: -100px;
+/* end styles for main - section visual */
+
+/* styles for main - section plants_box */
+.plants_box {
+  padding-top: 26px;
 }
-/* end styles for main */
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.category_box {
+  width: 310px;
+  float: left;
+  padding: 14px 18px;
+  background-color: #fbfbfb;
+}
+.category_box h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.category_menu {
+  color: #3d3d3d;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 40px;
+}
+.category_menu a {
+  color: inherit;
+  text-decoration: none;
+}
+.category_list {
+  padding-left: 12px;
+}
+.category_list.active,
+.category_list a:hover {
+  color: #46a358;
+  font-weight: bold;
+}
+
+.shop_box {
+  float: right;
+  width: calc(100% - 310px);
+}
+.product_options {
+  margin-bottom: 31px;
+}
+.product_options_list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+  font-size: 15px;
+  color: #3d3d3d;
+  float: left;
+}
+.product_options_list li {
+  display: inline-block;
+  margin-right: 37px;
+}
+.product_options_list a {
+  color: inherit;
+  text-decoration: none;
+}
+.product_options_list .active,
+.product_options_list a:hover {
+  color: #46a358;
+  font-weight: bold;
+}
+.Short_by {
+  float: right;
+  font-size: 16px;
+  font-weight: normal;
+}
+.filter_select {
+  border: none;
+}
+.cards_list li {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0;
+  width: 33.3%;
+}
+.cards_ikon {
+  background-color: #fbfbfb;
+}
+.cards_list p {
+  font-weight: normal;
+  font-size: 16px;
+  margin: 0;
+}
+.cards_list span {
+  font-weight: bold;
+  font-size: 18px;
+  color: #46a358;
+  margin: 0;
+}
+.pagination li {
+  display: inline-block;
+  margin-left: 5px;
+  text-align: center;
+}
+.pagination li.active a,
+.pagination a:hover {
+  background-color: #46a358;
+  color: #fff;
+}
+.pagination {
+  text-align: right;
+}
+.pagination a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border-radius: 4px;
+  border: 1px solid #e5e5e5;
+  padding-top: 8px;
+  text-decoration: none;
+  color: inherit;
+  overflow: hidden;
+}

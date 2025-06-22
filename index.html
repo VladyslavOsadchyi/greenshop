@@ -12,22 +12,24 @@
 <body>
    <!-- header -->
    <header class="header">
-      <strong class="header-logo">
-         <img src="images/logo.svg" alt="logogreenshop">
-      </strong>
-      <nav class="header-menu">
-         <ul>
-            <li><a href="" target="_blank">Home</a></li>
-            <li><a href="" target="_blank">Shop</a></li>
-            <li> <a href="" target="_blank">Plant Care</a></li>
-            <li><a href="" target="_blank">Blogs</a></li>
-         </ul>
-      </nav>
-      <a href="registration.html" class="header-login">Login</a>
+      <div class="container">
+         <strong class="header-logo">
+            <img src="images/logo.svg" alt="logogreenshop">
+         </strong>
+         <nav class="header-menu">
+            <ul>
+               <li class="menu-list active"><a href="" target="_blank">Home</a></li>
+               <li class="menu-list"><a href="" target="_blank">Shop</a></li>
+               <li class="menu-list"><a href="" target="_blank">Plant Care</a></li>
+               <li class="menu-list"><a href="" target="_blank">Blogs</a></li>
+            </ul>
+         </nav>
+         <a href="registration.html" class="header-login">Login</a>
+      </div>
    </header>
    <!-- main -->
-   <main>
-      <section class="visual">
+   <main class="container">
+      <section class=" visual">
          <div class="visual-text">
             <h2>WELCOME TO GREENSHOP</h2>
             <h1>LET`S MAKE A BETTER <span class="mark">PLANET</span></h1>
@@ -36,7 +38,96 @@
             <a href="#shop" class="visual-text-btn">SHOP NOW</a>
          </div>
          <div class="visual-img">
-            <img src="images/img-banner.png" alt="twoplants" class="img-plant">
+            <img src="images/img-banner.png" alt="twoplants" width="585" class="img-plant">
+         </div>
+      </section>
+      <section class="plants_box clearfix">
+         <aside class="category_box">
+            <h3>Categories</h3>
+            <ul class="category_menu">
+               <li class="category_list active"><a href="">House Plants</a></li>
+               <li class="category_list"><a href="">Potter Plants</a></li>
+               <li class="category_list"><a href="">Seeds</a></li>
+               <li class="category_list"><a href="">Small Plants</a></li>
+               <li class="category_list"><a href="">Big Plants</a></li>
+               <li class="category_list"><a href="">Succulents</a></li>
+               <li class="category_list"><a href="">Trerrariums</a></li>
+               <li class="category_list"><a href="">Gardening</a></li>
+               <li class="category_list"><a href="">Accessories</a></li>
+            </ul>
+            <img src="/images/Super_Sale_Banner.svg" alt="super_sale_ikon" width="310">
+         </aside>
+         <div class="shop_box">
+            <div class="product_options clearfix">
+               <ul class="product_options_list">
+                  <li class="active"><a href="">All Plants</a></li>
+                  <li><a href="">New Arrivals</a></li>
+                  <li><a href="">Sale</a></li>
+               </ul>
+               <label class="Short_by">
+                  <span>Short by:</span>
+                  <select name="" id="#" class="filter_select">
+                     <option value="">Default sorting</option>
+                     <option value="">Price</option>
+                  </select>
+               </label>
+            </div>
+            <ul class="cards_list">
+               <li class="cards_item">
+                  <div class="cards_ikon">
+                     <img src="/images/p1.png" alt="plant1">
+                  </div>
+                  <p>Barberton Daisy</p>
+                  <span class="card_price">$119.00</span>
+               </li>
+               <!-- <li>
+                     <img src="/images/p2.png" alt="plant2">
+                     <p>Angel Wing Begonia</p>
+                     <span class="card_price">$169.00</span>
+                  </li>
+                  <li>
+                     <img src="/images/p3.png" alt="plant3">
+                     <p>African Violet</p>
+                     <span class="card_price">$199.00</span>
+                  </li>
+                  <li>
+                     <img src="/images/p4.png" alt="plant4">
+                     <p>Beach Spider Lily</p>
+                     <span class="card_price">$129.00</span>
+                  </li>
+                  <li>
+                     <img src="/images/p5.png" alt="plant5">
+                     <p>Blushing Bromeliad</p>
+                     <span class="card_price">$139.00</span>
+                  </li>
+                  <li>
+                     <img src="/images/p6.png" alt="plant6">
+                     <p>Aluminum Plant</p>
+                     <span class="card_price">$179.00</span>
+                  </li>
+                  <li>
+                     <img src="/images/p7.png" alt="plant7">
+                     <p>Bird's Nest Fern</p>
+                     <span class="card_price">$99.00</span>
+                  </li>
+                  <li>
+                     <img src="/images/p8.png" alt="plant8">
+                     <p>Broadleaf Lady Palm</p>
+                     <span class="card_price">$59.00</span>
+                  </li>
+                  <li>
+                     <img src="/images/p9.png" alt="plant9">
+                     <p>Chinese Evergreen</p>
+                     <span class="card_price">$39.00</span>
+                  </li> -->
+            </ul>
+            <ul class="pagination">
+               <li class="active"><a href="#">1</a></li>
+               <li><a href="">2</a></li>
+               <li><a href="">3</a></li>
+               <li><a href="">4</a></li>
+               <li><a href="">></a></li>
+            </ul>
          </div>
       </section>
    </main>
