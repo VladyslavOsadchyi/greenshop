@@ -1,4 +1,4 @@
-/* styles for form */
+/* styles for fonts */
 @font-face {
   font-family: "Cera Pro";
   src: local("Cera Pro"), url("../fonts/CeraPro-Regular.woff2") format("woff2");
@@ -30,6 +30,7 @@
 body {
   font-family: "Cera Pro";
 }
+/* styles for form */
 .box {
   width: 157px;
   height: 22px;
@@ -91,7 +92,6 @@ p {
   text-align: center;
   color: #727272;
 }
-/* end styles for form */
 
 /* styles for header */
 .header {
@@ -159,14 +159,12 @@ p {
   left: 0;
   right: 0;
 }
-/* end styles for heared */
 
 /* styles for main - section visual */
 .visual {
   font-size: 0;
   background-color: #f5f5f5;
 }
-
 .visual-text {
   width: 50%;
   display: inline-block;
@@ -219,11 +217,12 @@ p {
   display: inline-block;
   vertical-align: middle;
 }
-/* end styles for main - section visual */
-
 /* styles for main - section plants_box */
+
+/* <!-- section plants_box - categorys --> */
 .plants_box {
   padding-top: 26px;
+  padding-bottom: 20px;
 }
 .clearfix::after {
   content: "";
@@ -258,7 +257,7 @@ p {
   color: #46a358;
   font-weight: bold;
 }
-
+/* <!-- section plants_box - shop_box --> */
 .shop_box {
   float: right;
   width: calc(100% - 310px);
@@ -296,6 +295,7 @@ p {
 .filter_select {
   border: none;
 }
+/* <!-- section plants_box - cards --> */
 .cards_list li {
   list-style-type: none;
   margin: 0px;
@@ -316,12 +316,13 @@ p {
   color: #46a358;
   margin: 0;
 }
-.pagination li {
-  display: inline-block;
+/* <!-- section plants_box - pagination --> */
+.pagination ul li {
+  display: inline;
   margin-left: 5px;
   text-align: center;
 }
-.pagination li.active a,
+.pagination ul li.active a,
 .pagination a:hover {
   background-color: #46a358;
   color: #fff;
@@ -329,7 +330,7 @@ p {
 .pagination {
   text-align: right;
 }
-.pagination a {
+.pagination ul a {
   display: inline-block;
   width: 35px;
   height: 35px;
@@ -339,4 +340,143 @@ p {
   text-decoration: none;
   color: inherit;
   overflow: hidden;
+}
+/* <!-- not section element - find more --> */
+.find_more {
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.sammer_cactus {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  background-color: #fbfbfb;
+}
+.plant_14 {
+  width: 287px;
+  height: 292px;
+  margin-top: -30px;
+}
+.cactus {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 20px;
+}
+.cactus h3 {
+  width: 145px;
+  height: 45px;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: right;
+}
+.cactus p {
+  width: 292px;
+  height: 45px;
+  font-weight: normal;
+  font-size: 14px;
+  text-align: right;
+}
+.styling_trends {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  background-color: #fbfbfb;
+}
+.plant_15 {
+  display: flex;
+  width: 289px;
+  height: 287px;
+  margin-top: -30px;
+}
+.trends {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 20px;
+}
+.trends h3 {
+  width: 135px;
+  height: 45px;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: right;
+}
+.trends p {
+  width: 292px;
+  height: 45px;
+  font-weight: normal;
+  font-size: 14px;
+  text-align: right;
+}
+/* styles for section blog post */
+.blog_post {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.post_header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.post_header h2 {
+  width: 209px;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.post_header p {
+  width: 557px;
+  font-weight: normal;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+.blog_post_cards {
+  display: flex;
+  column-gap: 40px;
+}
+.post_cards {
+  display: flex;
+  width: 268px;
+  flex-direction: column;
+  justify-content: start;
+}
+.post_cards .time_span {
+  color: #46a358;
+  font-weight: 500;
+  font-size: 14px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+}
+.post_cards h3 {
+  display: flex;
+  font-weight: bold;
+  font-size: 20px;
+  width: 220px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+}
+.post_cards p {
+  width: 242px;
+  font-weight: normal;
+  font-size: 14px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+}
+.post_cards a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  color: #3d3d3d;
+  padding-bottom: 8px;
+  padding-left: 10px;
+}
+.post_cards a:hover {
+  color: #46a358;
 }
