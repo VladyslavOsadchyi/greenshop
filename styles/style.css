@@ -1,4 +1,4 @@
-/* styles for form */
+/* styles for fonts */
 @font-face {
   font-family: "Cera Pro";
   src: local("Cera Pro"), url("../fonts/CeraPro-Regular.woff2") format("woff2");
@@ -30,6 +30,7 @@
 body {
   font-family: "Cera Pro";
 }
+/* styles for form */
 .box {
   width: 157px;
   height: 22px;
@@ -50,7 +51,6 @@ body {
   color: #46a358;
 }
 p {
-  font-weight: 400;
   font-size: 13px;
   color: #3d3d3d;
 }
@@ -91,7 +91,6 @@ p {
   text-align: center;
   color: #727272;
 }
-/* end styles for form */
 
 /* styles for header */
 .header {
@@ -159,14 +158,13 @@ p {
   left: 0;
   right: 0;
 }
-/* end styles for heared */
 
 /* styles for main - section visual */
 .visual {
   font-size: 0;
   background-color: #f5f5f5;
+  margin-bottom: 20px;
 }
-
 .visual-text {
   width: 50%;
   display: inline-block;
@@ -187,6 +185,12 @@ p {
   font-size: 60px;
   color: black;
 }
+h2 {
+  font-weight: bold;
+}
+h3 {
+  font-weight: bold;
+}
 .mark {
   color: #46a358;
 }
@@ -199,7 +203,7 @@ p {
   margin: 5px 0px 44px 0px;
 }
 .visual-text-btn {
-  width: 140px;
+  max-width: 140px;
   font-size: 16px;
   vertical-align: middle;
   background-color: #46a358;
@@ -219,11 +223,11 @@ p {
   display: inline-block;
   vertical-align: middle;
 }
-/* end styles for main - section visual */
-
 /* styles for main - section plants_box */
+
+/* <!-- section plants_box - categorys --> */
 .plants_box {
-  padding-top: 26px;
+  margin-bottom: 40px;
 }
 .clearfix::after {
   content: "";
@@ -258,7 +262,7 @@ p {
   color: #46a358;
   font-weight: bold;
 }
-
+/* <!-- section plants_box - shop_box --> */
 .shop_box {
   float: right;
   width: calc(100% - 310px);
@@ -296,6 +300,7 @@ p {
 .filter_select {
   border: none;
 }
+/* <!-- section plants_box - cards --> */
 .cards_list li {
   list-style-type: none;
   margin: 0px;
@@ -316,12 +321,13 @@ p {
   color: #46a358;
   margin: 0;
 }
-.pagination li {
-  display: inline-block;
+/* <!-- section plants_box - pagination --> */
+.pagination ul li {
+  display: inline;
   margin-left: 5px;
   text-align: center;
 }
-.pagination li.active a,
+.pagination ul li.active a,
 .pagination a:hover {
   background-color: #46a358;
   color: #fff;
@@ -329,7 +335,7 @@ p {
 .pagination {
   text-align: right;
 }
-.pagination a {
+.pagination ul a {
   display: inline-block;
   width: 35px;
   height: 35px;
@@ -339,4 +345,92 @@ p {
   text-decoration: none;
   color: inherit;
   overflow: hidden;
+}
+/* <!-- not section element - find more --> */
+.find_more {
+  display: flex;
+  padding-top: 40px;
+  margin-bottom: 40px;
+  column-gap: 2%;
+}
+.sammer_cactus {
+  display: flex;
+  width: 49%;
+  align-items: center;
+  background-color: #fbfbfb;
+}
+.plant_14_15 {
+  width: 50%;
+  margin-top: -30px;
+}
+.cactus {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 20px;
+  text-align: right;
+}
+.cactus h3 {
+  max-width: 145px;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.cactus p {
+  max-width: 292px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+/* styles for section blog post */
+.blog_post {
+  margin-bottom: 40px;
+  padding-top: 40px;
+}
+.post_header {
+  text-align: center;
+}
+.post_header h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.post_header p {
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+.blog_post_cards {
+  display: flex;
+  column-gap: 3.3%;
+  background-color: #fbfbfb;
+}
+.post_cards {
+  width: 24.3%;
+}
+.card_info .time_span,
+h3,
+p,
+.cards_link {
+  padding-left: 10px;
+}
+.post_cards .time_span {
+  color: #46a358;
+  font-weight: 500;
+  font-size: 14px;
+}
+.post_cards h3 {
+  display: flex;
+  font-size: 20px;
+  width: 220px;
+}
+.post_cards p {
+  width: 242px;
+  font-weight: normal;
+  font-size: 14px;
+}
+.post_cards a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  color: #3d3d3d;
+}
+.post_cards a:hover {
+  color: #46a358;
 }
