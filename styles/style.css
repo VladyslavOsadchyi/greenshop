@@ -304,10 +304,6 @@ h3 {
   border: none;
 }
 /* <!-- section plants_box - cards --> */
-.cards {
-  display: flex;
-  flex-direction: column;
-}
 .cards_list {
   display: flex;
   flex-wrap: wrap;
