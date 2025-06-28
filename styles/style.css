@@ -377,20 +377,20 @@ h3 {
 .pagination {
   margin-bottom: 94px;
 }
-.pagination ul {
+.pagination_list {
   display: flex;
   justify-content: end;
 }
-.pagination li {
+.pagination_list li {
   margin-left: 5px;
   text-align: center;
 }
-.pagination li.active a,
-.pagination a:hover {
+.pagination_list li.active a,
+.pagination_list a:hover {
   background-color: #46a358;
   color: #fff;
 }
-.pagination a {
+.pagination_list a {
   display: inline-block;
   width: 35px;
   height: 35px;
