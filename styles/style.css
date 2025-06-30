@@ -122,32 +122,92 @@ p {
 }
 .header-menu {
   display: flex;
-  justify-content: space-around;
-  font-size: 16px;
+  justify-content: center;
   width: calc(100% - 250px);
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
 }
 .header-menu-list {
   display: flex;
+  gap: 40px;
   font-size: 16px;
 }
 .header-menu a {
   text-decoration: none;
+  color: inherit;
   color: black;
-  margin: 0 50px;
 }
-.menu-list.active a {
+.header-menu-list > li {
   position: relative;
-  font-weight: bold;
 }
-.menu-list.active a::after {
-  content: "";
-  display: flex;
-  height: 3px;
-  background: green;
+.header-menu-list > li:hover .sub_menu {
+  display: block;
+}
+.sub_menu {
+  display: none;
   position: absolute;
-  bottom: -28px;
+  left: 0;
+  top: 100%;
+  padding-top: 42px;
+  width: 188px;
+}
+.sub_menu li {
+  background-color: #edf6ee;
+}
+.sub_menu li:has(ul) > a:after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border: solid #3d3d3d;
+  border-width: 2px 2px 0 0;
+  display: inline-block;
+  right: 12px;
+  top: 12px;
+  transform: rotate(45deg);
+}
+.sub_menu li:hover > a::after {
+  border-width: 0 0 2px 2px;
+  border-color: #fff;
+}
+.header-menu-list > li:not(:active):hover > a {
+  color: #46a358;
+}
+.header-menu-list .active > a {
+  font-weight: 700;
+}
+.header-menu-list .active::after,
+.header-menu-list > li:hover::after {
+  content: "";
+  height: 3px;
+  width: 100%;
+  display: inline-block;
+  background-color: #46a358;
+  position: absolute;
   left: 0;
   right: 0;
+  bottom: -30px;
+}
+.sub_menu a {
+  display: block;
+  padding: 7px 14px;
+  position: relative;
+}
+.sub_menu li:hover > a {
+  background-color: #46a358;
+  color: #fff;
+}
+.sub_menu li:hover .second_sub_menu {
+  display: block;
+}
+.second_sub_menu {
+  position: absolute;
+  display: none;
+  left: 100%;
+  width: 178px;
+  top: 0;
+  padding-top: 42px;
 }
 
 /* styles for main - section visual */
