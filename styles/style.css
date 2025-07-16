@@ -263,19 +263,19 @@ input[type="checkbox"] {
   position: absolute;
 }
 .ring:nth-child(1) {
-border-bottom-width: 8px;
-border-color: rgba(157, 6, 239, 0.718);
-animation: rotate1 2s linear infinite;
+  border-bottom-width: 8px;
+  border-color: rgba(157, 6, 239, 0.718);
+  animation: rotate1 2s linear infinite;
 }
 .ring:nth-child(2) {
-border-top-width: 8px;
-border-color: rgba(4, 238, 246, 0.664);
-animation: rotate2 2s linear infinite;
+  border-top-width: 8px;
+  border-color: rgba(4, 238, 246, 0.664);
+  animation: rotate2 2s linear infinite;
 }
 .ring:nth-child(3) {
-border-bottom-width: 8px;
-border-color: rgba(246, 246, 4, 0.734);
-animation: rotate3 2s linear infinite;
+  border-bottom-width: 8px;
+  border-color: rgba(246, 246, 4, 0.734);
+  animation: rotate3 2s linear infinite;
 }
 .loading {
   position: absolute;
