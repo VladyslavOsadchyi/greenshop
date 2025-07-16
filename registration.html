@@ -10,35 +10,44 @@
 </head>
 
 <body>
-    <form action="#" method="post">
-      <div class="box">
-        <h2 class="login-text">Login <span class="separator">|</span> <span class="register-text">Register</span></h2>
-      </div>
-      <p class="form_p_color">Enter your email and password to register.</p>
-      <input class="input-text" type="text" name="Username" placeholder="Username" />
-      <input class="input-email" type="email" name="Enter your email address" placeholder="Enter your email address" />
-      <div class="input-password_ikon">
-        <input class="input-password" type="password" name="Password" placeholder="Password" />
-        <img src="/images/Hide.jpg" width="20" alt="Hide ikon" />
-      </div>
-      <input class="input-Confirm-Password" type="password" name="Confirm Password" placeholder="Confirm Password" />
-        <div class="form_check">
-          <label class="checkbox_line">
-            <input id="check" type="checkbox">
-            <span>Checked</span>
-          </label>
-        </div>
-      <button class="btn" type="submit">Register</button>
-      <p class="form_p_second"><span class="span_left"></span><span class="span_center">Or register with</span><span class="span_right"></span></p>
-      <a class="btn-social-media" type="submit">
-        <img src="/images/google_1.svg" width="20" alt="googl ikon" />
-        <p>Continue with Google</p>
-      </a>
-      <a class="btn-social-media" type="submit">
-        <img src="/images/facebook_1.svg" width="20" alt="facebook ikon" />
-        <p>Continue with Facebook</p>
-      </a>
-    </form>
+  <div class="spiner">
+    <div class="ring"></div>
+    <div class="ring"></div>
+    <div class="ring"></div>
+    <div class="loading">loading...</div>
+  </div>
+  <form action="#" method="post">
+    <div class="box">
+      <h2 class="login-text">Login <span class="separator">|</span> <span class="register-text">Register</span></h2>
+    </div>
+    <p class="form_p_color">Enter your email and password to register.</p>
+    <input class="input-text" type="text" name="Username" placeholder="Username" />
+    <input class="input-email" type="email" name="Enter your email address" placeholder="Enter your email address" />
+    <div class="input-password_ikon">
+      <input class="input-password" type="password" name="Password" placeholder="Password" />
+      <img src="/images/Hide.jpg" width="20" alt="Hide ikon" />
+    </div>
+    <input class="input-Confirm-Password" type="password" name="Confirm Password" placeholder="Confirm Password" />
+    <div class="form_check">
+      <label class="checkbox_line">
+        <input id="check" type="checkbox">
+        <span>I agree to the terms</span>
+      </label>
+    </div>
+    <button class="btn" type="submit">Register</button>
+    <p class="form_p_second"><span class="span_left"></span><span class="span_center">Or register with</span><span class="span_right"></span></p>
+    <a class="btn-social-media" type="submit">
+      <img src="/images/google_1.svg" width="20" alt="googl ikon" />
+      <p>Continue with Google</p>
+    </a>
+    <a class="btn-social-media" type="submit">
+      <img src="/images/facebook_1.svg" width="20" alt="facebook ikon" />
+      <p>Continue with Facebook</p>
+    </a>
+  </form>
+  <script>
+    window.addEventListener('load', function () { setTimeout(function () { const spiner = document.querySelector('.spiner'); spiner.style.opacity = '0'; spiner.style.transition = 'opacity 0.5s ease'; setTimeout(function () { spiner.style.display = 'none'; }, 500); }, 4000); });
+  </script>
 </body>
 
 </html>
