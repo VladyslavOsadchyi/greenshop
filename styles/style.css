@@ -32,6 +32,7 @@ body {
 }
 body p {
   font-size: 14px;
+  line-height: 1.714;
 }
 /* styles for form */
 form {
@@ -497,8 +498,6 @@ h3 {
 }
 .visual-text p {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
   color: #727272;
   margin: 5px 0px 44px 0px;
 }
@@ -509,6 +508,7 @@ h3 {
   background-color: #46a358;
   text-align: center;
   padding: 10px 10px 10px 10px;
+  margin-bottom: 10px;
   color: #fff;
   text-decoration: none;
   border-radius: 6px;
@@ -535,16 +535,13 @@ h3 {
   fill: #46a358;
   color: #46a358;
 }
-.visual-img {
-  width: 50%;
-  display: flex;
-}
+
 /* styles for main - section plants_box */
 
 /* <!-- section plants_box - categorys --> */
 .plants_box {
   display: flex;
-  margin-bottom: 94px;
+  margin-bottom: 20px;
 }
 .category_box {
   display: flex;
@@ -552,7 +549,7 @@ h3 {
   width: 310px;
   padding-top: 14px;
   background-color: #fbfbfb;
-  margin-bottom: 120px;
+  margin-bottom: 40px;
 }
 .category_box h3 {
   font-size: 18px;
@@ -593,7 +590,7 @@ h3 {
   display: flex;
   justify-content: space-between;
   line-height: 23px;
-  margin-bottom: 31px;
+  margin-bottom: 5px;
 }
 .product_options_list {
   display: flex;
@@ -631,7 +628,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  margin-bottom: 90px;
+  margin-bottom: 20px;
 }
 .list_item {
   display: flex;
@@ -694,7 +691,6 @@ h3 {
   transform: translateY(-5px);
   fill: #46a358;
 }
-
 .sale {
   position: absolute;
   left: 0;
@@ -766,12 +762,11 @@ h3 {
   font-size: 18px;
   line-height: 24px;
   margin-bottom: 15px;
+  padding-top: 10px;
   color: #3d3d3d;
 }
 .cactus p {
   max-width: 292px;
-  font-size: 14px;
-  line-height: 24px;
   margin-bottom: 20px;
   color: #727272;
 }
@@ -823,8 +818,6 @@ h3 {
 .post_cards p {
   width: 242px;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 22px;
   color: #727272;
   padding-left: 10px;
   margin-bottom: 10px;
@@ -835,6 +828,7 @@ h3 {
   font-size: 14px;
   color: #3d3d3d;
   padding-left: 10px;
+  padding-bottom: 10px;
   margin-bottom: 10px;
 }
 .post_cards a:hover {
@@ -915,8 +909,6 @@ form > h3 {
 }
 form > p {
   color: rgba(114, 114, 114, 1);
-  font-size: 13px;
-  line-height: 22px;
 }
 .visual-text-btn-footer {
   font-weight: 700;
@@ -1025,6 +1017,7 @@ form > p {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
   border: 1px solid rgba(70, 163, 88, 0.2);
   border-radius: 6px;
   width: 30px;
@@ -1052,9 +1045,7 @@ form > p {
 @media screen and (max-width: 1024px) {
   body {
     font-size: 12px;
-  }
-  .visual {
-    padding: 20px 0;
+    line-height: 1.714;
   }
   .visual-text {
     padding-left: 10px;
@@ -1064,7 +1055,7 @@ form > p {
   }
   .visual-text-btn {
     max-width: 110px;
-    padding: 10px;
+    font-size: 14px;
   }
   .category_box {
     display: none;
@@ -1075,7 +1066,6 @@ form > p {
   }
   .list_item {
     width: calc(50% - 30px);
-    display: flex;
   }
   .find_more_ikon {
     display: none;
@@ -1106,6 +1096,7 @@ form > p {
   }
   .visual-text-btn-footer {
     padding: 10px 5px;
+    font-size: 14px;
   }
   form h3 {
     font-size: 14px;
@@ -1147,27 +1138,36 @@ form > p {
     padding: 3px 10px;
   }
   .visual {
-    display: flex;
     padding: 10px 0;
   }
+  .visual-text {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .visual-text > h2 {
+    font-size: 12px;
+  }
   .visual-text > h1 {
-    font-size: 35px;
+    font-size: 30px;
   }
   .visual-text > p {
     margin-bottom: 10px;
   }
+  .visual-img {
+    aspect-ratio: 3 / 4;
+    overflow: hidden;
+  }
   .visual-img > img {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    vertical-align: middle;
+    height: 100%;
+    object-fit: cover;
+    object-position: 20% 80%;
   }
   .shop_box {
     margin: 0;
   }
   .list_item {
     width: 100%;
-    display: flex;
   }
   .product_options_list > li {
     font-size: 12px;
@@ -1196,12 +1196,25 @@ form > p {
   .post_cards > img {
     margin: 0;
     width: 40%;
+    object-fit: cover;
   }
   .footer1 {
     flex-direction: column;
   }
+  .footer1_list {
+    display: block;
+  }
   .footer1_list li {
-    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-size: auto 80px;
+    position: relative;
+    padding: 0 15px 0 94px;
+    background-position-y: 50%;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .footer1_list li p {
+    display: block;
   }
   .footer2 {
     height: 220px;
@@ -1218,9 +1231,10 @@ form > p {
     font-size: 12px;
   }
   .footer3_sublist li {
-padding-bottom: 0; 
+    padding-bottom: 0;
   }
   .footer3_sublist li a {
     font-size: 12px;
+    line-height: 15px;
   }
 }
