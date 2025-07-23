@@ -502,7 +502,8 @@ h3 {
   margin: 5px 0px 44px 0px;
 }
 .visual-text-btn {
-  max-width: 142px;
+  min-width: 100px;
+  width: fit-content;
   font-size: 16px;
   vertical-align: middle;
   background-color: #46a358;
@@ -810,13 +811,11 @@ h3 {
   display: flex;
   font-size: 20px;
   line-height: 26px;
-  width: 220px;
   color: #3d3d3d;
   padding-left: 10px;
   margin-bottom: 10px;
 }
 .post_cards p {
-  width: 242px;
   font-weight: normal;
   color: #727272;
   padding-left: 10px;
@@ -1038,7 +1037,7 @@ form > p {
 .wrapper {
   min-width: 375px;
 }
-.nav-ikon {
+.nav-icon {
   display: none;
 }
 /* responsive */
@@ -1047,15 +1046,30 @@ form > p {
     font-size: 12px;
     line-height: 1.714;
   }
+  .header-login {
+    padding: 5px 10px 8px;
+    line-height: 16px;
+  }
+  .header-login_ikon {
+    display: none;
+  }
   .visual-text {
     padding-left: 10px;
   }
   .visual-text h1 {
     font-size: 50px;
+    margin: 15px 0;
+  }
+  .visual-text h2 {
+    font-size: 13px;
+  }
+  .visual-text p {
+    font-size: 13px;
   }
   .visual-text-btn {
-    max-width: 110px;
     font-size: 14px;
+    line-height: 15px;
+    padding: 5px 0;
   }
   .category_box {
     display: none;
@@ -1063,9 +1077,22 @@ form > p {
   .shop_box {
     width: 100%;
     padding: 0 10px;
+    margin: 0;
+  }
+  .product_options_list {
+    font-size: 14px;
+  }
+  .Short_by span {
+    font-size: 13px;
   }
   .list_item {
     width: calc(50% - 30px);
+  }
+  .list_item p {
+    font-size: 14px;
+  }
+  .card_price {
+    font-size: 16px;
   }
   .find_more_ikon {
     display: none;
@@ -1116,10 +1143,35 @@ form > p {
 @media screen and (max-width: 768px) {
   .header-menu-list {
     display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 200px;
+    padding-top: 90px;
+    z-index: 10;
   }
-  .nav-ikon {
+  .menu-list a {
+    display: block;
+    text-align: right;
+    padding-right: 25px;
+  }
+  .header-menu-list .active a {
+    font-weight: 400;
+  }
+  .header-menu-list .active::after,
+  .header-menu-list > li:hover::after {
+    content: "";
+    height: 0;
+  }
+  .nav-icon {
     display: block;
     font-size: 16px;
+    position: relative;
+    z-index: 20;
+  }
+  .header-menu.active .header-menu-list {
+    display: block;
   }
   .header-menu {
     width: 40px;
@@ -1136,6 +1188,11 @@ form > p {
     font-size: 0;
     animation: none;
     padding: 3px 10px;
+  }
+  .header-login_ikon {
+    display: inline-block;
+    position: relative;
+    z-index: 20;
   }
   .visual {
     padding: 10px 0;
@@ -1162,6 +1219,12 @@ form > p {
     height: 100%;
     object-fit: cover;
     object-position: 20% 80%;
+    opacity: 0.5;
+  }
+  .visual-text-btn {
+    font-size: 13px;
+    line-height: 10px;
+    padding: 4px 0;
   }
   .shop_box {
     margin: 0;
@@ -1171,7 +1234,16 @@ form > p {
   }
   .product_options_list > li {
     font-size: 12px;
-    margin-right: 8px;
+    margin-right: 7px;
+  }
+  .Short_by span {
+    font-size: 12px;
+  }
+  .list_item p {
+    font-size: 13px;
+  }
+  .card_price {
+    font-size: 14px;
   }
   .filter_select {
     font-family: "Cera Pro";
@@ -1197,6 +1269,9 @@ form > p {
     margin: 0;
     width: 40%;
     object-fit: cover;
+  }
+  .card_info {
+    width: 60%;
   }
   .footer1 {
     flex-direction: column;
@@ -1236,5 +1311,14 @@ form > p {
   .footer3_sublist li a {
     font-size: 12px;
     line-height: 15px;
+  }
+  .social_links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .social_links a {
+    margin: 0;
   }
 }
