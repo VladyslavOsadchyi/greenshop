@@ -1196,8 +1196,22 @@ form > p {
     position: relative;
     z-index: 20;
   }
-  .visual {
-    padding: 10px 0;
+  .sub_menu {
+    z-index: 19;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    padding-top: 22px;
+    width: 105px;
+  }
+  .sub_menu a {
+    width: 105px;
+    background-color: #d3e6d6;
+    color: #3d3d3d;
+    font-size: 14px;
+  }
+  .sub_menu li:has(ul) > a:after {
+    display: none;
   }
   .visual-text {
     max-width: 400px;
